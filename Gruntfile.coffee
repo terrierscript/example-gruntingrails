@@ -5,6 +5,7 @@ module.exports = (grunt) ->
     sass :
       dist:
         options:
-          includePaths: ['app/stylesheets', 'lib/stylesheets'],
+          includePaths: ['app/assets/stylesheets', 'lib/assets/stylesheets'],
         files :
-          "public/assets/app.css" : "app/stylesheets/app.scss"
+          "public/assets/app.css" : "app/assets/stylesheets/app.scss"
+  grunt.registerTask "default", ["sass"]
